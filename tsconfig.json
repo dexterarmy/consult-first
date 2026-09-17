@@ -1,0 +1,8 @@
+{
+  "extends": "agents/tsconfig",
+  "compilerOptions": {
+    "types": ["node", "vite/client"],
+    "noEmit": true
+  },
+  "include": ["src", "env.d.ts"]
+}

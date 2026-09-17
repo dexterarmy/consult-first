@@ -1,0 +1,34 @@
+{
+  "name": "consult-first",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A chat agent on Cloudflare that consults a policy table before it acts and keeps a hash-chained witness log of every decision.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "deploy": "vite build && wrangler deploy",
+    "types": "wrangler types env.d.ts",
+    "check": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types test/witness.test.ts"
+  },
+  "dependencies": {
+    "@cloudflare/ai-chat": "^0.12.0",
+    "agents": "^0.23.0",
+    "ai": "^6.0.197",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "workers-ai-provider": "^3.2.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.46.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "typescript": "^5.9.0",
+    "vite": "^8.1.0",
+    "wrangler": "^4.133.0"
+  }
+}
