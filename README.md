@@ -4,8 +4,6 @@ An AI chat agent on Cloudflare that **consults a policy table before it acts**, 
 human approval when policy says so, and writes a **hash-chained witness record** of every
 consultation and action. A durable Workflow audits the chain on demand.
 
-Built for Cloudflare's "AI-powered application" assignment. Live demo: _(URL added after deploy)_.
-
 ## What it does
 
 Ask it to do something — look up a customer, send a notification, delete a record. Before any
